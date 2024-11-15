@@ -1,0 +1,61 @@
+body, html
+{
+    font-family:Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+form
+{
+    border: 5px, black, solid;
+    border-radius: 15px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+input
+{
+    margin: 1% 0;
+    width: 80%;
+    height: 10%;
+    border-radius: 10px;
+    border: solid, 0.5%, rgba(134, 134, 134, 0.404);
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+    
+}
+
+
+
+#pon, #cl
+{
+    
+
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+    width: 49%;
+    margin: 2% 0px;
+    background: rgb(94, 199, 176);
+}
+
+h1
+{
+    font-size: 2cm;
+    font-weight: bold;
+    text-align: center;
+}
+

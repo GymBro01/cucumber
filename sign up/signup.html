@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html  ondragstart="return false;"  onselectstart="return false;" oncontextmenu="return false;" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="csscss.css">
+</head>
+<body >
+    <form action="" method="get">
+        <h1>Sign up</h1>
+        
+        <input id="ava" type="file" accept="image/png, image/jpeg">
+
+    
+        <input id="l" type="text" placeholder="Login" required>
+       
+        <input id="e" pattern="[A-Z][0-9]*+@+[A-Z]*+\.+[A-Z]*" size="30" type="email" placeholder="Email" required>
+        
+        <input id="p1" minlength="8" type="password" placeholder="Enter_Password" required>
+
+        <input id="p2" type="password" placeholder="Confirm_Password" required>
+
+      
+        <input id="b" type="date">
+        <div id="bts">
+            <input type="submit" id="pon" value="sign up">
+            <input type="reset" id="cl"  value="clear form">
+        </div>
+       
+    </form>
+    <script src="js.js"></script>
+</body>
+
+</html>
