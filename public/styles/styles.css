@@ -1,0 +1,69 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+
+#header
+{
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: rgb(213, 177, 214);
+    width: 100%;
+}
+
+
+.nav-logo img
+{
+    border-radius: 50%;
+    height: 100px;
+}
+
+a
+{
+    text-decoration: none;
+    color:rgb(70, 70, 70);
+}
+
+
+ul
+{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 15%;
+}
+
+li
+{
+    border: rgb(56, 56, 56) solid 5px;
+    border-radius: 10px;
+    margin: 2%;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.footer p
+{
+    position: static;
+    background: rgb(213, 177, 214);
+    height: 5%;
+    width: 100%;
+    margin: 0;
+    bottom: 0;
+}
