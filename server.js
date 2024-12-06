@@ -4,6 +4,10 @@ const path = require('path');
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
+const sequelize = require('./config/db.config');
+const viewRoutes = require('./routes/index');
+const apiRoutes = require('./api/users');
+
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -18,6 +22,17 @@ app.engine('hbs', exphbs({
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
+sequelize.sync() 
+  .then(() => { 
+    console.log('Database & tables created!'); 
+  }) 
+  .catch((err) => { 
+    console.error('Error creating database:', err); 
+  });
+
+  app.use('/', viewRoutes); 
+  app.use('/api', apiRoutes);
+  
 app.get('/', (req, res) => {
   res.render('home', {
     title: 'Home Page', message: 'My first Node.js Express HBS app' });
